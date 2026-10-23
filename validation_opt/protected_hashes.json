@@ -1,0 +1,18 @@
+{
+  "test/reference/project_8bit.v": {
+    "expected": "279db397eecc4afd91e2f172e8bf21a465506f964cbf1438a8e865b14531323e",
+    "actual": "279db397eecc4afd91e2f172e8bf21a465506f964cbf1438a8e865b14531323e"
+  },
+  "test/reference/project_12bit.v": {
+    "expected": "c29208d0cec6146be16f8769a1fccd7e21cd5fefef325d550656d8d3f7501102",
+    "actual": "c29208d0cec6146be16f8769a1fccd7e21cd5fefef325d550656d8d3f7501102"
+  },
+  "src/meanabs_candidate.v": {
+    "expected": "41db477363224763b4ed180d3de584f9fff50554051286889c100f782c0ad21f",
+    "actual": "41db477363224763b4ed180d3de584f9fff50554051286889c100f782c0ad21f"
+  },
+  "test/reference/project_adc3542_ddr_orig.v": {
+    "expected": "a60e365e43b747d664800e80f42248474621a61178f0df00265b386dc71b405f",
+    "actual": "a60e365e43b747d664800e80f42248474621a61178f0df00265b386dc71b405f"
+  }
+}

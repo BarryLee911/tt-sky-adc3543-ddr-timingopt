@@ -1,0 +1,41 @@
+name: ddr-regression
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  full-regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install Icarus
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Install synthetic stimulus dependency
+        run: pip install -r tools/requirements.txt
+      - name: Regenerate byte-identical artificial stimuli
+        run: python tools/run_tests.py prepare
+      - name: Compile dedicated regressions
+        run: python tools/run_tests.py compile
+      - name: Run receiver, COUNT, accumulation and output protocol tests
+        run: python tools/run_tests.py run
+      - name: Compile phase model
+        run: python tools/timing_sweep.py compile
+      - name: Evaluate 80MHz phase envelope and report the unclosed aperture
+        run: python tools/timing_sweep.py run
+      - name: Verify host protocol and preserved source hashes
+        run: |
+          python tools/host_protocol.py
+          python tools/run_tests.py integrity
+      - name: Upload reproducible logs and reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ddr-regression-results
+          path: |
+            build/reports/*.json
+            build/reports/*.csv
+            build/reports/*.log
+          retention-days: 14

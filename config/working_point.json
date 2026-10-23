@@ -1,0 +1,71 @@
+{
+  "selected_adc": "ADC3543",
+  "master_clock_hz": 80000000,
+  "adc_samples_per_second": 40000000,
+  "adc_output": "raw 14-bit, default 7+7 parallel CMOS DDR; DDC disabled",
+  "dclk_hz": 40000000,
+  "data_bits_per_second_per_lane": 80000000,
+  "master_period_ns": 12.5,
+  "adc_period_ns": 25,
+  "default_level": 1,
+  "samples_per_carrier": 2048,
+  "carrier_hz": 19531.25,
+  "carrier_period_us": 51.2,
+  "hardware_window_periods": 16,
+  "hardware_window_ms": 0.8192,
+  "handoff_cycles": 80000,
+  "handoff_ms": 1,
+  "amplitude_frame_clocks": 6,
+  "amplitude_frame_ns": 75,
+  "output": "COUNT11 / TYPE / 3x9-bit amplitude payload; 29-bit sum >> 2",
+  "external_128_nonoverlapping_windows_ms": 104.8576,
+  "external_128_sum_min_bits": 34,
+  "levels": [
+    {
+      "level": 1,
+      "decimation": 1,
+      "effective_samples_per_second": 40000000.0,
+      "reference_hz": 19531.25,
+      "first_window_seconds": 0.0008192
+    },
+    {
+      "level": 2,
+      "decimation": 2,
+      "effective_samples_per_second": 20000000.0,
+      "reference_hz": 9765.625,
+      "first_window_seconds": 0.0016384
+    },
+    {
+      "level": 3,
+      "decimation": 4,
+      "effective_samples_per_second": 10000000.0,
+      "reference_hz": 4882.8125,
+      "first_window_seconds": 0.0032768
+    },
+    {
+      "level": 5,
+      "decimation": 16,
+      "effective_samples_per_second": 2500000.0,
+      "reference_hz": 1220.703125,
+      "first_window_seconds": 0.0131072
+    },
+    {
+      "level": 8,
+      "decimation": 128,
+      "effective_samples_per_second": 312500.0,
+      "reference_hz": 152.587890625,
+      "first_window_seconds": 0.1048576
+    },
+    {
+      "level": 23,
+      "decimation": 4194304,
+      "effective_samples_per_second": 9.5367431640625,
+      "reference_hz": 0.004656612873077393,
+      "first_window_seconds": 3435.9738368
+    }
+  ],
+  "status": "Approved working point; physical 80MHz timing not closed",
+  "existing_module_names_retained": true,
+  "adc_url": "https://www.ti.com/product/ADC3543",
+  "family_datasheet": "https://www.ti.com/lit/ds/symlink/adc3542.pdf"
+}

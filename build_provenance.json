@@ -1,0 +1,60 @@
+{
+  "template": "TinyTapeout/ttsky-verilog-template",
+  "template_commit": "a42e6662fab316e93b4e26399e21d41664a460b7",
+  "official_gds_action": "TinyTapeout/tt-gds-action@ttsky26d",
+  "preserved_sources": {
+    "adc3542_rx7.v": "20d7ac2265bb31bb6979972b35995faf0ac55567b2b24545d4aa160e0e36e14d",
+    "meanabs_candidate.v": "41db477363224763b4ed180d3de584f9fff50554051286889c100f782c0ad21f"
+  },
+  "clock_target_hz": 80000000,
+  "tiles": "6x2",
+  "physical_interface_signoff": "Not established: the retained absolute delay assumptions have no positive common aperture at 80MHz",
+  "base_ddr_version": {
+    "commit": "11c630ee90fc27b1330f48f587303fb95fbd12d5",
+    "project_adc3542_ddr.v": "6311b2a7e2549ce5355c334f1a6534af17eeddf426625637fa1125ddbf2f8619"
+  },
+  "modified_sources": {
+    "project_adc3542_ddr.v": "3eb3d2767ea9ece56c40c904bbb8f4d0aed58fb4d93fecf37d4255572e08542c"
+  },
+  "supported_levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "rejected_levels": [
+    0,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "selection": "Each 2^(LEVEL-1)th complete word, first raw zero-based index 2^(LEVEL-1)-1",
+  "multilevel_base_commit": "51f1efa3ad4131b0efbdf73c9521231f7d528903",
+  "selected_adc": "ADC3543",
+  "adc_samples_per_second": 40000000,
+  "production_datapath_changed_from_multilevel_base": false
+}

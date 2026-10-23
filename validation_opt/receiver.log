@@ -1,0 +1,2 @@
+RX_PASS,checks=65574,samples=32781,detected_errors=2,whole_pair_loss_undetectable=1
+/home/claude/ddr_opt/test/ddr/tb_rx.v:37: $finish called at 819681251 (1ps)

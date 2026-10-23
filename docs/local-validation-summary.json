@@ -1,0 +1,112 @@
+{
+  "functional_totals": {
+    "samples": 32781,
+    "accepted": 1769493,
+    "count_checks": 2129581,
+    "frames": 404293,
+    "invalids": 196599,
+    "updates_open": 399,
+    "errors": 4,
+    "resets": 2
+  },
+  "timing": {
+    "status": "BEHAVIOURAL_MODEL_ONLY",
+    "clock_period_ns": 24.4140625,
+    "adc_period_ns": 48.828125,
+    "scenarios": 3969,
+    "setup_ns": 1,
+    "hold_ns": 0.5,
+    "uncertainty_ns": 0.5,
+    "assumed_skew_ns": [
+      -1,
+      1
+    ],
+    "assumed_output_duty_distortion_ns": [
+      -2,
+      2
+    ],
+    "summary": {
+      "direct": {
+        "all_corner_good_phases_ns": [
+          12.0,
+          12.5,
+          13.0,
+          13.5,
+          14.0,
+          14.5,
+          15.0,
+          15.5,
+          16.0,
+          16.5,
+          17.0,
+          17.5,
+          18.0,
+          18.5,
+          19.0,
+          19.5,
+          20.0,
+          20.5,
+          21.0,
+          21.5,
+          22.0,
+          22.5,
+          23.0
+        ],
+        "grid_intervals_ns": [
+          [
+            12.0,
+            23.0
+          ]
+        ],
+        "scenarios": 1323,
+        "analytic_unwrapped_open_interval_ns": [
+          11.5,
+          23.4140625
+        ],
+        "analytic_explanation": "latest launch+skew+setup+uncertainty < phase < H+earliest next launch+skew-duty-hold-uncertainty"
+      },
+      "illustrative_translation": {
+        "all_corner_good_phases_ns": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          17.0,
+          17.5,
+          18.0,
+          18.5,
+          19.0,
+          19.5,
+          20.0,
+          20.5,
+          21.0,
+          21.5,
+          22.0,
+          22.5,
+          23.0,
+          23.5,
+          24.0
+        ],
+        "grid_intervals_ns": [
+          [
+            0.0,
+            2.0
+          ],
+          [
+            17.0,
+            24.0
+          ]
+        ],
+        "scenarios": 2646,
+        "analytic_unwrapped_open_interval_ns": [
+          16.5,
+          26.4140625
+        ],
+        "analytic_explanation": "latest launch+skew+setup+uncertainty < phase < H+earliest next launch+skew-duty-hold-uncertainty"
+      }
+    },
+    "limits": "No library, PCB, translator PVT, input slew, CTS, metastability or measured duty guarantee. Not physical timing closure."
+  },
+  "note": "Prior local prototype evidence; new GitHub runs produce independent reports. No physical timing closure claim."
+}

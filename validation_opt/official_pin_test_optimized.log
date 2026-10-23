@@ -1,0 +1,2 @@
+OFFICIAL_PIN_TEST_PASS,frames=16564,invalids=58307,count_checks=7999
+test/ddr/tb_official_equiv.v:117: $finish called at 4803175000 (1ps)

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "clean",
+    "samples": 262144,
+    "sha256": "41d0b6e7fe66be4e567216e8795bf2033e96873a51f9157be814568606ffad39",
+    "source": "artificial formula and fixed RNG seed",
+    "byte_exact_match": true
+  },
+  {
+    "name": "combined",
+    "samples": 262144,
+    "sha256": "feabf899016a3946bc06074b2639e833eb535785c621d810d0894fca6a019c4d",
+    "source": "artificial formula and fixed RNG seed",
+    "byte_exact_match": true
+  }
+]

@@ -1,0 +1,412 @@
+{
+  "status": "PASS",
+  "master_clock_hz": 80000000,
+  "adc_samples_per_second": 40000000,
+  "runs": [
+    {
+      "name": "receiver",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_rx.vvp"
+      ],
+      "seconds": 0.6156348510000953,
+      "status": "PASS",
+      "counts": {
+        "checks": 65574,
+        "samples": 32781,
+        "detected_errors": 2,
+        "whole_pair_loss_undetectable": 1
+      }
+    },
+    {
+      "name": "configuration",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_config.vvp"
+      ],
+      "seconds": 0.06016417699993326,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 3357,
+        "equiv_reset_checks": 93,
+        "legal_levels": 23,
+        "unsupported_levels": 9,
+        "configuration_checks": 3220
+      }
+    },
+    {
+      "name": "random",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/random.bin",
+        "+N=262144",
+        "+FAULTS=0"
+      ],
+      "seconds": 29.34177070999999,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524296,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 524308,
+        "accepted": 262147,
+        "count_checks": 302154,
+        "frames": 74049,
+        "invalids": 0,
+        "updates_open": 73,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 134574727,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "zero",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/zero.bin",
+        "+N=65536",
+        "+FAULTS=0"
+      ],
+      "seconds": 6.37162903300009,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 131080,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 131092,
+        "accepted": 65539,
+        "count_checks": 105546,
+        "frames": 8513,
+        "invalids": 0,
+        "updates_open": 9,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 268435456,
+        "remainder_mask": 1
+      }
+    },
+    {
+      "name": "maximum",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/maximum.bin",
+        "+N=65536",
+        "+FAULTS=0"
+      ],
+      "seconds": 6.392859883000028,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 131080,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 131092,
+        "accepted": 65539,
+        "count_checks": 105546,
+        "frames": 8513,
+        "invalids": 0,
+        "updates_open": 9,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 268402688,
+        "remainder_mask": 1
+      }
+    },
+    {
+      "name": "midpoint",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/midpoint.bin",
+        "+N=65536",
+        "+FAULTS=0"
+      ],
+      "seconds": 6.122028857000032,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 131080,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 131092,
+        "accepted": 65539,
+        "count_checks": 105546,
+        "frames": 8513,
+        "invalids": 0,
+        "updates_open": 9,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 0,
+        "remainder_mask": 1
+      }
+    },
+    {
+      "name": "clean",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/clean.bin",
+        "+N=262144",
+        "+FAULTS=0"
+      ],
+      "seconds": 28.60707837399991,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524296,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 524308,
+        "accepted": 262147,
+        "count_checks": 302154,
+        "frames": 74049,
+        "invalids": 0,
+        "updates_open": 73,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 160564363,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "combined",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/combined.bin",
+        "+N=262144",
+        "+FAULTS=0"
+      ],
+      "seconds": 29.04896448999989,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524296,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 524308,
+        "accepted": 262147,
+        "count_checks": 302154,
+        "frames": 74049,
+        "invalids": 0,
+        "updates_open": 73,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 160372314,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "faults",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/random.bin",
+        "+N=262144",
+        "+FAULTS=1"
+      ],
+      "seconds": 27.514354183000023,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524290,
+        "equiv_reset_checks": 9,
+        "level": 1,
+        "edges": 524313,
+        "accepted": 262144,
+        "count_checks": 342155,
+        "frames": 38869,
+        "invalids": 65538,
+        "updates_open": 38,
+        "errors": 2,
+        "resets": 1,
+        "max_sum16": 134578247,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "early_handoff_faults",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream_short.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/random.bin",
+        "+N=262144",
+        "+FAULTS=1"
+      ],
+      "seconds": 28.14801357400006,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524290,
+        "equiv_reset_checks": 9,
+        "level": 1,
+        "edges": 524313,
+        "accepted": 262144,
+        "count_checks": 262172,
+        "frames": 43689,
+        "invalids": 131061,
+        "updates_open": 42,
+        "errors": 2,
+        "resets": 1,
+        "max_sum16": 134578247,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "offset_binary",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream_offset.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/random.bin",
+        "+N=262144"
+      ],
+      "seconds": 27.929760279999982,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 524296,
+        "equiv_reset_checks": 5,
+        "level": 1,
+        "edges": 524308,
+        "accepted": 262147,
+        "count_checks": 302154,
+        "frames": 74049,
+        "invalids": 0,
+        "updates_open": 73,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 134574727,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "level2_faults",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream_level2.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/levels_random.bin",
+        "+N=655360",
+        "+FAULTS=1"
+      ],
+      "seconds": 66.07308217400009,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 1310722,
+        "equiv_reset_checks": 9,
+        "level": 2,
+        "edges": 1310745,
+        "accepted": 327679,
+        "count_checks": 735371,
+        "frames": 131070,
+        "invalids": 182150,
+        "updates_open": 63,
+        "errors": 2,
+        "resets": 1,
+        "max_sum16": 135408344,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "level3_offset_faults",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream_level3.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/levels_random.bin",
+        "+N=655360",
+        "+FAULTS=1"
+      ],
+      "seconds": 59.39528108500008,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 1310722,
+        "equiv_reset_checks": 9,
+        "level": 3,
+        "edges": 1310745,
+        "accepted": 163838,
+        "count_checks": 735371,
+        "frames": 43689,
+        "invalids": 444294,
+        "updates_open": 10,
+        "errors": 2,
+        "resets": 1,
+        "max_sum16": 135047368,
+        "remainder_mask": 15
+      }
+    },
+    {
+      "name": "level5_window",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_stream_level5.vvp",
+        "+INPUT=/home/claude/ddr_opt/build/reports/stimuli/levels_random.bin",
+        "+N=655360",
+        "+FAULTS=0"
+      ],
+      "seconds": 54.393324826000025,
+      "status": "PASS",
+      "counts": {
+        "equiv_checks": 1310728,
+        "equiv_reset_checks": 5,
+        "level": 5,
+        "edges": 1310740,
+        "accepted": 40960,
+        "count_checks": 695370,
+        "frames": 43691,
+        "invalids": 484290,
+        "updates_open": 3,
+        "errors": 0,
+        "resets": 0,
+        "max_sum16": 133926639,
+        "remainder_mask": 11
+      }
+    },
+    {
+      "name": "all_level_real_intervals",
+      "command": [
+        "/usr/local/bin/vvp",
+        "/home/claude/ddr_opt/test/ddr/tb_levels.vvp"
+      ],
+      "seconds": 654.1918772709998,
+      "status": "PASS",
+      "counts": {
+        "level": 23,
+        "stride": 4194304,
+        "raw_words": 16777214,
+        "selected": 2,
+        "equiv_checks": 33554314,
+        "equiv_reset_checks": 69,
+        "legal_levels": 23,
+        "checks": 33554543,
+        "selected_events": 46
+      }
+    }
+  ],
+  "total": {
+    "samples": 32781,
+    "accepted": 2301970,
+    "count_checks": 4295693,
+    "frames": 622743,
+    "invalids": 1307333,
+    "updates_open": 475,
+    "errors": 8,
+    "resets": 4,
+    "equiv_checks": 41028847,
+    "equiv_reset_checks": 238
+  },
+  "protected": {
+    "test/reference/project_8bit.v": {
+      "expected": "279db397eecc4afd91e2f172e8bf21a465506f964cbf1438a8e865b14531323e",
+      "actual": "279db397eecc4afd91e2f172e8bf21a465506f964cbf1438a8e865b14531323e"
+    },
+    "test/reference/project_12bit.v": {
+      "expected": "c29208d0cec6146be16f8769a1fccd7e21cd5fefef325d550656d8d3f7501102",
+      "actual": "c29208d0cec6146be16f8769a1fccd7e21cd5fefef325d550656d8d3f7501102"
+    },
+    "src/meanabs_candidate.v": {
+      "expected": "41db477363224763b4ed180d3de584f9fff50554051286889c100f782c0ad21f",
+      "actual": "41db477363224763b4ed180d3de584f9fff50554051286889c100f782c0ad21f"
+    },
+    "test/reference/project_adc3542_ddr_orig.v": {
+      "expected": "a60e365e43b747d664800e80f42248474621a61178f0df00265b386dc71b405f",
+      "actual": "a60e365e43b747d664800e80f42248474621a61178f0df00265b386dc71b405f"
+    }
+  },
+  "scope": "80MHz RTL source schedule; reference build checked by the original oracle, optimized build checked pin-for-pin against it with a fixed 5-cycle latency; no physical timing/ENOB/performance guarantee"
+}

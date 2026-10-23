@@ -1,0 +1,188 @@
+[
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_rx",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_rx.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_rx.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_config",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_config.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_config.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_levels",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_levels.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_levels.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-Ptb_stream.HANDOFF=17",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream_short.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-Ptb_stream.TWOS=0",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream_offset.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-Ptb_stream.LEVEL=2",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream_level2.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-Ptb_stream.LEVEL=3",
+      "-Ptb_stream.TWOS=0",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream_level3.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/usr/local/bin/iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_stream",
+      "-Ptb_stream.LEVEL=5",
+      "-o",
+      "/home/claude/ddr_opt/test/ddr/tb_stream_level5.vvp",
+      "/home/claude/ddr_opt/src/adc3542_rx7.v",
+      "/home/claude/ddr_opt/src/meanabs_candidate.v",
+      "/home/claude/ddr_opt/src/meanabs_pipelined.v",
+      "/home/claude/ddr_opt/src/project_adc3542_ddr.v",
+      "/home/claude/ddr_opt/test/reference/project_adc3542_ddr_orig.v",
+      "/home/claude/ddr_opt/test/ddr/pin_equiv.v",
+      "/home/claude/ddr_opt/test/reference/project_12bit.v",
+      "/home/claude/ddr_opt/test/ddr/tb_stream.v"
+    ],
+    "exit_code": 0
+  }
+]

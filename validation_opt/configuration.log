@@ -1,0 +1,2 @@
+CONFIG_PASS,equiv_checks=3357,equiv_reset_checks=93,legal_levels=23,unsupported_levels=9,configuration_checks=3220
+/home/claude/ddr_opt/test/ddr/tb_config.v:43: $finish called at 45137500 (1ps)

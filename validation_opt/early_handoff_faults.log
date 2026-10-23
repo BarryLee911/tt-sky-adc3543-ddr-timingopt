@@ -1,0 +1,2 @@
+STREAM_PASS,equiv_checks=524290,equiv_reset_checks=9,level=1,edges=524313,accepted=262144,count_checks=262172,frames=43689,invalids=131061,updates_open=42,errors=2,resets=1,max_sum16=134578247,remainder_mask=15
+/home/claude/ddr_opt/test/ddr/tb_stream.v:182: $finish called at 6553906260 (1ps)

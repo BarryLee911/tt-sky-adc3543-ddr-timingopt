@@ -1,0 +1,25 @@
+LEVEL_RATE_PASS,level=1,stride=1,raw_words=2,selected=2
+LEVEL_RATE_PASS,level=2,stride=2,raw_words=4,selected=2
+LEVEL_RATE_PASS,level=3,stride=4,raw_words=8,selected=2
+LEVEL_RATE_PASS,level=4,stride=8,raw_words=16,selected=2
+LEVEL_RATE_PASS,level=5,stride=16,raw_words=32,selected=2
+LEVEL_RATE_PASS,level=6,stride=32,raw_words=64,selected=2
+LEVEL_RATE_PASS,level=7,stride=64,raw_words=128,selected=2
+LEVEL_RATE_PASS,level=8,stride=128,raw_words=256,selected=2
+LEVEL_RATE_PASS,level=9,stride=256,raw_words=512,selected=2
+LEVEL_RATE_PASS,level=10,stride=512,raw_words=1024,selected=2
+LEVEL_RATE_PASS,level=11,stride=1024,raw_words=2048,selected=2
+LEVEL_RATE_PASS,level=12,stride=2048,raw_words=4096,selected=2
+LEVEL_RATE_PASS,level=13,stride=4096,raw_words=8192,selected=2
+LEVEL_RATE_PASS,level=14,stride=8192,raw_words=16384,selected=2
+LEVEL_RATE_PASS,level=15,stride=16384,raw_words=32768,selected=2
+LEVEL_RATE_PASS,level=16,stride=32768,raw_words=65536,selected=2
+LEVEL_RATE_PASS,level=17,stride=65536,raw_words=131072,selected=2
+LEVEL_RATE_PASS,level=18,stride=131072,raw_words=262144,selected=2
+LEVEL_RATE_PASS,level=19,stride=262144,raw_words=524288,selected=2
+LEVEL_RATE_PASS,level=20,stride=524288,raw_words=1048576,selected=2
+LEVEL_RATE_PASS,level=21,stride=1048576,raw_words=2097152,selected=2
+LEVEL_RATE_PASS,level=22,stride=2097152,raw_words=4194304,selected=2
+LEVEL_RATE_PASS,level=23,stride=4194304,raw_words=8388608,selected=2
+LEVELS_PASS,equiv_checks=33554314,equiv_reset_checks=69,legal_levels=23,raw_words=16777214,checks=33554543,selected_events=46
+/home/claude/ddr_opt/test/ddr/tb_levels.v:47: $finish called at 419431787500 (1ps)
